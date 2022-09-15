@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@font-face {
+  font-family: norse;
+  src: url('Norse-Bold.otf') format('opentype');
+}
+
+body {
+  background: url('background.jpg');
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-wrapper {
+  background: rgb(242, 243, 239);
+  height: 100vh;
+  min-width: 60vw;
+  box-shadow: -3px 0 10px #888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  background: white;
+  padding: 40px;
+  box-shadow: 0 5px 10px gray;
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+}
+
+.form-row > div > label {
+  display: block;
+}
+
+.logo-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.logo > h1 {
+  text-align: center;
+  letter-spacing: 1rem;
+  text-shadow: -2px 2px 5px #222;
+  margin-right: -0.8rem;
+  font-family: norse;
+  font-size: 4rem;
+}
+
+.logo-wrapper > p {
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.logo-wrapper a {
+  color:white;
+}
+
+.logo > img {
+  width: 100px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+  width: 100%;
+  background: rgba(50, 50, 50, 0.4);
+  padding: 10px 0;
+  /* box-shadow: -3px 3px 5px gray; */
+}
+
