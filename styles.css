@@ -72,6 +72,13 @@ form > button {
   cursor: pointer;
 }
 
+.form-wrapper > div > a{
+  font-weight: bold;
+  color:rgb(70, 150, 70);
+  background: rgba(255, 255, 255, 0.562);
+  padding: 3px;
+}
+
 .logo-wrapper {
   color: white;
   display: flex;
@@ -80,7 +87,6 @@ form > button {
   align-items: center;
   width: 100%;
 }
-
 
 .logo > h1 {
   text-align: center;
@@ -112,6 +118,30 @@ form > button {
   width: 100%;
   background: rgba(50, 50, 50, 0.4);
   padding: 10px 0;
-  /* box-shadow: -3px 3px 5px gray; */
 }
 
+input:focus {
+  outline: none;
+  border-color: rgb(62, 62, 180);
+  background: rgb(213, 213, 230);
+  box-shadow: 1px 1px 3px gray;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+button:hover {
+  background:rgb(74, 124, 74);
+}
+
+button:active {
+  background:rgb(143, 211, 143);
+  color: black;
+  box-shadow: inset 1px 1px 2px gray;
+}
+
+.pwd-error {
+  color: red;
+  display: none;
+}
